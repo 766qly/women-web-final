@@ -1,0 +1,317 @@
+nav ul{
+    display: block;
+    width: 100%;
+}
+
+
+a.skip{
+    position: absolute;
+    left: -300px;
+    top: -100px;
+}
+
+a.skip:focus{
+    background-color: #ffff00;
+    left: 0;
+    top: 0;
+}
+
+body{
+    margin: 8px;
+}
+
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    width: 24.5%;
+    height: 100%;
+    font-size: 20px;
+    background: #000;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav li.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration: underline;
+    background-color: blue;
+}
+img{
+    width: 45%;
+    padding: 20px;
+    margin: 5px 10px 20px 15px;
+    border: solid lightgoldenrodyellow 10px;
+}
+
+h1{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Trocchi', serif;
+    font-size:80px;
+    color:brown;
+    background-size: 400px 200px;
+    background-position: 30%;
+    background-image: url(../images/women.jpeg);
+}
+
+.first-img{
+    display: block;
+    padding: 0;
+    width:99.9%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+p{
+    line-height: 1.5;
+}
+main div{
+    border: dashed 3px black;
+    padding: 5px;
+    font-family:"Open Sans", Arial, Helvetica, Sans-serif;
+    font-size: 18px;
+}
+
+h2{
+    font-size: 40px;
+    font-family: "Open Sans",Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+h3{
+    font-size: 20px;
+    font-family: "Open Sans", Arial, Helvetica, Sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+footer {
+    margin: 2.5%;
+    padding: 5px;
+    border: black 3px;
+    border-style: dashed solid;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+.nav_bar ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav_bar ul li{
+    width: 100%;
+}
+.home{
+    display: grid;
+    row-gap: 30px;
+    border: none;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97.5%;
+}
+.home div{
+    border: none; 
+    color:#000000;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+.container{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    border: none;
+}
+
+.container div{
+    /* Set border properties, padding, and background color */
+    border: black 10px;
+    border-style:  dashed double none;
+    padding: 5px;
+    color:#000000;
+    background-color: #add8e6;
+    box-shadow: -8px 0 8px 0 #a9a9a9, 8px 0 8px 0 #a9a9a9;
+}
+
+.container img{
+    /* Set width, margin, and display */
+    padding: 0;
+    border: none;
+    width: 100%;
+    margin: auto;
+}
+
+dl{
+    margin-bottom: 25px;
+    border: black 3px;
+    border-style: dashed solid;
+
+}
+
+dt{
+    padding-left: 10px;
+    font-size: 30px;
+    font-family: "Raleway", 'Times New Roman', Times, serif;
+}
+
+dd{
+    margin: 10px;
+    border: none; 
+    padding: 5px;
+    color:#000000;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+dd p{
+    font-family: "Raleway", 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 800px) {
+    .nav_bar ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .nav_bar ul li{
+        width: 24.9%;
+    }
+
+    .dictionary{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    .dictionary dl:nth-child(2n){
+        text-align: right;
+    }
+
+    .container{
+        /*Set width, margin, border properties, background color, and grid properties */
+        display: grid;
+        width: 100%;
+        border-radius: 20px;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, 700px);
+        column-gap: 30px;
+        row-gap: 30px;
+        border: none;
+    }
+
+    .container div{
+        /* Set border properties, padding, and background color */
+        border: black 10px;
+        border-style:  dashed double none;
+        padding: 5px;
+        color:#000000;
+        background-color: #add8e6;
+        box-shadow: -8px 0 8px 0 #a9a9a9, 8px 0 8px 0 #a9a9a9;
+        overflow: scroll;
+    }
+
+    .container img{
+        /* Set width, margin, and display */
+        height: 40%;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .nav_bar ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .nav_bar ul li{
+        width: 24.9%;
+    }
+
+    .dictionary{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    .dictionary dl:nth-child(2n){
+        text-align: center;
+    }
+
+    .dictionary dl:nth-child(3n){
+        text-align: right;
+    }
+
+    .container{
+        /*Set width, margin, border properties, background color, and grid properties */
+        display: grid;
+        width: 100%;
+        border-radius: 20px;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 700px);
+        column-gap: 30px;
+        row-gap: 30px;
+        border: none;
+    }
+
+    .container div{
+        /* Set border properties, padding, and background color */
+        border: black 10px;
+        border-style:  dashed double none;
+        padding: 5px;
+        color:#000000;
+        background-color: #add8e6;
+        box-shadow: -8px 0 8px 0 #a9a9a9, 8px 0 8px 0 #a9a9a9;
+        overflow: scroll;
+    }
+
+    .container img{
+        /* Set width, margin, and display */
+        height: 40%;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+      scroll-behavior: auto; /* Removes scroll animation */
+    }
+
+    /*Turn off transition*/
+    a.skip {
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+
+    /*Turn off parallax*/
+    .intro{
+      background-attachment: initial;
+    }
+  }
